@@ -1,24 +1,15 @@
 export const CATEGORY_OPTIONS = [
-  { value: "vegetables", label: "Vegetables" },
-  { value: "fruits", label: "Fruits" },
-  { value: "dairy", label: "Dairy" },
-  { value: "grains", label: "Grains" },
-  { value: "protein", label: "Protein" },
-  { value: "snacks", label: "Snacks" },
-  { value: "beverages", label: "Beverages" },
-  { value: "desserts", label: "Desserts" },
-  { value: "condiments", label: "Condiments" },
-  { value: "spices", label: "Spices" },
-  { value: "herbs", label: "Herbs" },
-  { value: "oils", label: "Oils" }
+  { value: "VEGETABLES", label: "Vegetables" },
+  { value: "FRUITS", label: "Fruits" },
+  { value: "DAIRY", label: "Dairy" },
+  { value: "GRAINS", label: "Grains" },
+  { value: "PROTEIN", label: "Protein" },
 ] as const;
 
 export const UNIT_OPTIONS = [
-  { value: "grams", label: "Grams" },
-  { value: "kilograms", label: "Kilograms" },
-  { value: "liters", label: "Liters" },
-  { value: "milliliters", label: "Milliliters" },
-  { value: "cups", label: "Cups" },
-  { value: "tablespoons", label: "Tablespoons" },
-  { value: "teaspoons", label: "Teaspoons" }
+  { value: "KILOGRAMS", label: "Kilograms" },
+  { value: "GRAMS", label: "Grams" },
+  { value: "LITERS", label: "Liters" },
+  { value: "MILLILITERS", label: "Milliliters" },
+  { value: "PIECES", label: "Pieces" },
 ] as const;

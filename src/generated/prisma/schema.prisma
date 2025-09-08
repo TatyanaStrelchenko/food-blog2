@@ -15,7 +15,7 @@ datasource db {
 }
 
 model User {
-  id        String    @id @default(ulid())
+  id        String    @id @default(uuid())
   email     String    @unique
   password  String
   createdAt DateTime  @default(now()) @map("created_at")
@@ -63,4 +63,33 @@ model VerificationToken {
 
   @@unique([identifier, token])
   @@map("verification_tokens")
+}
+
+model Ingredient {
+  id           String   @id @default(uuid())
+  name         String
+  category     Category
+  unit         Unit
+  pricePerUnit Float?
+  description  String?
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("ingredients")
+}
+
+enum Category {
+  VEGETABLES
+  FRUITS
+  GRAINS
+  PROTEIN
+  DAIRY
+}
+
+enum Unit {
+  KILOGRAMS
+  GRAMS
+  LITERS
+  MILLILITERS
+  PIECES
 }
